@@ -1,0 +1,210 @@
+/*
+*
+*  STYLESHEET VOOR BLOK WEB
+*  AUTEUR: EMMA OUDMAIJER
+*  LAATSTE AANPASSING: 29 NOVEMBER 2018
+*/
+
+
+
+/* 
+STIJL VOOR MENU BUTTONS OP DE HOMEPAGE EN DE BUTTON OP DE HOOFDPAGINAS VAN ELKE CATEGORIE
+*/
+
+
+/*nav a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 35px
+}*/
+
+
+body {
+    font-family:sans-serif;
+    margin:0px;  
+    font-size: 10px;
+}
+
+/* header stijlen menu */
+
+header {
+    padding:0px;
+    background-color: #1B1D3A;
+    height:105px;
+    margin: 0 0 0 0;
+    margin-top: 0;
+
+}
+
+
+header li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    margin-top:50px;
+    border: 0px solid;
+    border-radius: opx;
+    background-color: #31415f;
+    border-top:3px solid;
+    border-top-color: #31415f;
+}
+
+
+header p{
+    margin:0px;
+    padding-bottom: 0px;
+}
+
+header li:hover {
+    border-top:3px solid;
+    border-top-color: #FAEA31;
+}
+
+header a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    padding:10px;
+}
+
+header img {
+  float: left;
+  padding-top: 0px;
+ padding-right: 0px;
+  display: block;
+
+}
+
+/* h1 stijlen en de verras me button */
+
+button {
+    background-color: #FAEA31;
+    border-radius: 5px;
+    font-size: 2em;
+    float:right;
+    margin-top:0px;
+    font-size:25px;
+    padding:8px;
+}
+
+
+h1{
+    
+font-size: 40px;
+text-align: center;
+}
+
+h1 img {
+width: 60px;
+    
+}
+
+/* Formulier stijlen */
+h2 {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    margin: 15px 15px 15px 0px;
+    border: 1px solid;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+li input[type="text"] {
+    width: 100%;
+    font-size: 17px;
+}
+
+li input[type="checkbox"]{
+     width: 100%;
+     font-size: 17px;
+    
+}
+
+li textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+li input[type="submit"] {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 17px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 8px;
+}
+
+/*Stijl voor de verschillende sections en div*/
+section {
+margin: 0 1.5% 44px 1.5%;
+  float: left;
+  width: 22%;
+}
+
+section Div {
+  border:1px #000000 solid;
+  border-radius: 10px;
+  color: black;
+  display: block;
+  font-family: Arial;
+  text-align: center;
+  height:300px;
+  width:70%;
+}
+
+section img{
+  border-radius: 10px 10px 0px 0px; 
+  margin: 0 0 0 0;
+  width: 100%;
+
+}
+
+section p{ 
+ position: absolute;
+  margin-top: 255px;
+  margin-left:5%;
+    margin-right: 5%;
+    object-position: center;
+}
+
+section a{
+    background-color: #FAEA31;
+    padding: 5px 25px 5px 25px;
+    text-decoration: none;
+
+}
+
+footer {
+
+  clear: both;
+  margin-bottom: 0;
+}
+
+ul {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 35px;
+}
+
+ul form {
+    
+}
