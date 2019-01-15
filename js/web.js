@@ -3,32 +3,42 @@
 /*eslint 'no-console':0*/
 
 
-/* Set the width of the side navigation to 250px */
+/*----- functie om de download animatie af te spelen-----*/
+
+function wisselClass(img) {
+            img.classList.toggle('dl-na');
+}
+
+
+/*----- functie om het filtermenu te tonen -----*/
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-/* Set the width of the side navigation to 0 */
+
+/*----- functie om het filtermenu te verbergen -----*/
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-var hartjes = 'leeg';
-var hartjesNormaal = document.querySelector('.harticoon');
-var hartjesGekleurd = document.querySelector('.harticoon');
 
-function hartjesvullen() {
+/*----- functie om het favorietenhartje te vullen -----*/
+
+var hartjes = 'leeg';
+//var hartjesImage = document.querySelector('.harticoon');
+
+function hartjesvullen(hartjesImage) {
     if (hartjes =='leeg') {
-        hartjesNormaal.src = '/web/images/hartjeingekleurd.png';
+        hartjesImage.src = '/web/images/hartjeingekleurd.png';
         hartjes = 'vol';
         return hartjes;
     } else {
-        hartjesNormaal.src = '/web/images/hartjeicoon.png';
+        hartjesImage.src = '/web/images/hartjeicoon.png';
         hartjes = 'leeg';
         return hartjes;
     }
-
 }
-hartjesNormaal.addEventListener('click', hartjesvullen);
-hartjesGekleurd.addEventListener('click', hartjesNormaal);
+//hartjesImage.addEventListener('click', hartjesvullen);
 

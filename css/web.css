@@ -391,7 +391,7 @@ article a {
 
 .sidenav a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5em;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -415,6 +415,7 @@ article a {
     background-color: #B6B6B6;
     border: 0px;
     padding: 0;
+    font-size: 0.8em;
 }
 
 .sidenav h4 {
@@ -425,6 +426,7 @@ article a {
 
 .sidenav h5 {
     text-align: left;
+    font-size: 3em;
 }
 
 .sidenav input[type="submit"] {
