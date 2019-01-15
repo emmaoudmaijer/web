@@ -7,21 +7,43 @@
     <title>Document</title>
     <link rel="STYLESHEET" href="css/web.css" type="text/css">
 
+    <script>
+        function wisselClass(img) {
+            img.classList.toggle('dl-na');
+        }
+    </script>
+
 </head>
 
 <body>
     <header>
+        <button class="menu__btn">
+        <span class="menu__label">MENU</span>
+
+        <div class="menu--hidden">
+            <div class="menu__bg-layer menu__bg-layer-2"></div>
+            <div class="menu__bg-layer menu__bg-layer-1"></div>
+            <div class="menu__container">
+                <span class="menu__title">Menu</span>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html">Alle verhalen</a></li>
+                    <li class="menu__item"><a href="">Voor jou</a></li>
+                    <li class="menu__item"><a href="">Downloads</a></li>
+                    <li class="menu__item"><a href="">Likes</a></li>
+                    <li class="menu__item"><a href="inloggen.html">Profiel</a></li>
+                </ul>
+            </div>
+        </div>
+    </button>
         <img src="images/logo.png" alt="Logo">
         <nav>
-            <ul>
+            <ul class="ul_topmenu">
+
                 <li>
-                    <a href="">Top 10</a>
+                    <a href="index.html">Alle verhalen</a>
                 </li>
                 <li>
                     <a href="">Voor jou</a>
-                </li>
-                <li>
-                    <a href="">Alle verhalen</a>
                 </li>
                 <li>
                     <a href="">Downloads</a>
@@ -35,115 +57,146 @@
             </ul>
         </nav>
 
+
+
+
     </header>
 
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h4>Filter</h4>
+
+        <form class="filter" action="web.html">
+
+            <ul>
+                <h5>Genre</h5>
+
+                <li>
+                    <input type="checkbox" name="stars" value="1" checked="checked" /> Agressief</li>
+                <li><input type="checkbox" name="stars" value="3" checked="checked" /> Drama</li>
+                <li><input type="checkbox" name="stars" value="5" checked="checked" /> Humor</li>
+                <li><input type="checkbox" name="stars" value="1" checked="checked" /> Liefde</li>
+                <li><input type="checkbox" name="stars" value="3" checked="checked" /> Somber</li>
+                <li><input type="checkbox" name="stars" value="5" checked="checked" /> Spanning</li>
+            </ul>
+            <ul>
+                <h5>Lengte verhaal</h5>
+
+                <li><input type="checkbox" name="lengte" value="1" checked="checked" /> Kort</li>
+                <li><input type="checkbox" name="lengte" value="3" checked="checked" /> Middel</li>
+                <li><input type="checkbox" name="lengte" value="5" checked="checked" /> Lang</li>
+
+            </ul>
+            <ul>
+                <h5>Sorteren</h5>
+
+                <li><input type="checkbox" name="sorteren" value="1" checked="checked" /> Van A tot Z</li>
+                <li><input type="checkbox" name="sorteren" value="3" checked="checked" /> Van Z tot A</li>
+                <li><input type="checkbox" name="sorteren" value="5" checked="checked" /> Van kort naar lang</li>
+                <li><input type="checkbox" name="sorteren" value="5" checked="checked" /> Van lang naar kort</li>
+
+            </ul>
+
+            <input type="submit" name="subscribe" value="Toepassen" />
+            <script src="js/web.js"></script>
+        </form>
+
+    </div>
+
+
+    <img src="images/filter.png" alt="filter" class="filtericon" onclick="openNav()">
+
     <h1><button>Verras me!</button>Alle verhalen <br><img src="images/alleverhalen.png" alt="decoratie"><br></h1>
-    <section>
-        <h2>Meest bekeken</h2>
-        <article>
-            <div>
-                <p><a href="">Lees verder</a><br/><br/>DL</p>
-                <img src="images/sportcommentaar.png" alt="verhaal">
-                <h2>Sportcommentaar</h2>
-                En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein..
+    <h2>Meest bekeken</h2>
+    <div class="slider">
+        <section class="slide">
 
-            </div>
-        </article>
-        <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
+            <article>
+                <img src="images/sportcommentaar.png" alt="verhaal">
+                <h3>Sportcommentaar</h3>
+                <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein..</p>
+                <a href="verhaal.html">Lees verder</a><br/><br/>
+                <div class="dl-voor" onclick="wisselClass(this)"></div>
+                <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
+            </article>
+
+            <article>
                 <img src="images/verliefd.png" alt="verhaal">
-                <h2>Verliefd</h2>
-                Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag...
-            </div>
-        </article>
-        <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
-                <img src="images/voetbalanalisten.png" alt="verhaal">
-                <h2>Voetbalanalisten(1)</h2>
-                Jack van Gelder: Jongens, we hebben net gekeken naar Max Molovich die...
-            </div>
-        </article>
+                <h3>Verliefd</h3>
+                <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag...</p>
+                <a href="">Lees verder</a><br><br>
+                <div class="dl-voor" onclick="wisselClass(this)"></div>
+                <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
+            </article>
 
-        <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
+            <article>
                 <img src="images/voetbalanalisten.png" alt="verhaal">
-                <h2>Voetbalanalisten(2)</h2>
-                Wilfred Genee: René, we beginnen zoals altijd met jou. Is je nog wat opgevallen....
-            </div>
-        </article>
-    </section>
+                <h3>Voetbalanalisten(1)</h3>
+                <p>Jack van Gelder: Jongens, we hebben net gekeken naar Max Molovich die...</p>
+                <a href="">Lees verder</a><br><br>
+                <div class="dl-voor" onclick="wisselClass(this)"></div>
+                <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
+            </article>
+
+            <article>
+
+
+                <img src="images/voetbalanalisten.png" alt="verhaal">
+                <h3>Voetbalanalisten(2)</h3>
+                <p>Wilfred Genee: René, we beginnen zoals altijd met jou. Is je nog wat opgevallen....</p>
+                <a href="">Lees verder</a><br><br>
+                <div class="dl-voor" onclick="wisselClass(this)"></div>
+                <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
+            </article>
+        </section>
+    </div>
+    <h2>Agressieve verhalen</h2>
     <section>
-        <h2>Agressieve verhalen</h2>
+
         <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
-                <img src="images/sportcommentaar.png" alt="verhaal">
-                <h2>Sportcommentaar</h2>
-                En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein...
-            </div>
+
+
+            <img src="images/sportcommentaar.png" alt="verhaal">
+            <h2>Sportcommentaar</h2>
+            <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein...</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
         </article>
         <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
-                <img src="images/klumperbeven.png" alt="verhaal">
-                <h2>Klumperbeven</h2>
-                Ik bus de stap uit en been met gepaste zwind over het stationsplein.
-            </div>
+
+
+            <img src="images/klumperbeven.png" alt="verhaal">
+            <h2>Klumperbeven</h2>
+            <p> Ik bus de stap uit en been met gepaste zwind over het stationsplein.</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
         </article>
         <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
-                <img src="images/bejaard.png" alt="verhaal">
-                <h2>Bejaard</h2>
-                De chauffeur kijkt verveeld maar vooral ook licht geirriteerd
-            </div>
+
+
+            <img src="images/bejaard.png" alt="verhaal">
+            <h2>Bejaard</h2>
+            <p>De chauffeur kijkt verveeld maar vooral ook licht geirriteerd</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
         </article>
         <article>
-            <div>
-                <p><a href="">Lees verder</a></p>
-                <img src="images/dialoog.png" alt="verhaal">
-                <h2>Dialoog</h2>
-                - Wat zoek je? – Hoe bedoel je: wat zoek je? – Nou gewoon,
-            </div>
+
+            <img src="images/dialoog.png" alt="verhaal">
+            <h2>Dialoog</h2>
+            <p>- Wat zoek je? – Hoe bedoel je: wat zoek je? – Nou gewoon,</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon" id="opslaan">
         </article>
     </section>
 
-    <h3>Filter</h3>
-    <ul>
-        <li>
-            <form action="web.html">
 
-                <h3>Genre</h3>
-
-                <input type="checkbox" name="stars" value="1" checked="checked" /> Agressief
-                <input type="checkbox" name="stars" value="3" checked="checked" /> Drama
-                <input type="checkbox" name="stars" value="5" checked="checked" /> Humor
-                <input type="checkbox" name="stars" value="1" checked="checked" /> Liefde
-                <input type="checkbox" name="stars" value="3" checked="checked" /> Poezie
-                <input type="checkbox" name="stars" value="5" checked="checked" /> Spanning
-
-                <h3>Lengte verhaal</h3>
-
-                <input type="checkbox" name="lengte" value="1" checked="checked" /> Kort
-                <input type="checkbox" name="lengte" value="3" checked="checked" /> Middel
-                <input type="checkbox" name="lengte" value="5" checked="checked" /> Lang
-
-
-                <h2>Reageren op dit verhaal</h2>
-                <p><textarea name="comments" cols="20" rows="4" placeholder="Enter your comments here..."></textarea>
-                </p>
-
-                <input type="submit" name="subscribe" value="Toepassen" />
-
-            </form>
-        </li>
-    </ul>
-
-    <footer></footer>
+    <script src="js/web.js"></script>
 </body>
 
 </html>
