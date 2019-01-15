@@ -103,6 +103,7 @@ header {
         letter-spacing: 0.1em;
         font-weight: bold;
         color: #ffffff;
+        z-index: 1;
     }
     .menu__title {
         font-size: 1.9em;
