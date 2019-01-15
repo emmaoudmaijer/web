@@ -1,3 +1,8 @@
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*eslint-env browser*/
+/*eslint 'no-console':0*/
+
+
 /* Set the width of the side navigation to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
