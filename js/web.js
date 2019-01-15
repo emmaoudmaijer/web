@@ -8,41 +8,22 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+var hartjestatus = 'leeg';
+var hartjeLeeg = document.querySelector('#opslaan');
+var hartjeVol = document.querySelector('#opslaan');
 
-var hartjeinkleuren ='leeg';
-var hartjenormaal = document.querySelector('#opslaan');
-var hartjegekleurd = document.querySelector('#opslaan');
+function hartjesvullen() {
+    if (hartjesstatus == 'leeg') {
+        hartjesLeeg.src = 'images/hartjeingekleurd.png';
+        hartjesstatus = 'vol';
+        return hartjesstatus;
+    } else {
+        hartjesLeeg.src = '../images/hartjeicoon.png';
+        hartjesstatus = 'leeg';
+        return hartjesstatus;
+    }
 
-function hartjeInkleuren() {
-    if (hartjeInkleuren =='leeg'){
-        hartjenormaal.src = '../images/hartjeingekleurd.png';
-        hartjeinkleuren = 'vol';
-        return hartjeInkleuren;
-    }
-    else {
-        hartjenormaal.src ='../images/hartjeicoon.png';
-        hartjeinkleuren = 'leeg';
-    }
 }
-hartjenormaal.addEventListener('click', hartjeInkleuren);
-
-var hartje ='leeg';
-var hartjeleeg = document.querySelector('.hartjeicoon');
-var hartjeingekleurd = document.querySelector('.hartjeicoon');
-
-function hartje() {
-    if (hartje =='leeg'){
-        hartjeleeg.src = '../images/hartjeingekleurd.png';
-        hartjeinkleuren = 'vol';
-        return hartje;
-    }
-    else {
-        hartjeleeg.src ='../images/hartjeicoon.png';
-        hartje = 'leeg';
-        return hartje;
-    }
-}
-hartjeleeg.addEventListener('click', hartje);
-hartjeingekleurd.addEventListener('click', hartjeleeg);
-
+hartjesLeeg.addEventListener('click', hartjesvullen);
+hartjesVol.addEventListener('click', hartjesLeeg);
 
