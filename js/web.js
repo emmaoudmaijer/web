@@ -19,11 +19,11 @@ var hartjesGekleurd = document.querySelector('.harticoon');
 
 function hartjesvullen() {
     if (hartjes =='leeg') {
-        hartjesNormaal.src = '/images/hartjeingekleurd.png';
+        hartjesNormaal.src = '/web/images/hartjeingekleurd.png';
         hartjes = 'vol';
         return hartjes;
     } else {
-        hartjesNormaal.src = '/images/hartjeicoon.png';
+        hartjesNormaal.src = '/web/images/hartjeicoon.png';
         hartjes = 'leeg';
         return hartjes;
     }

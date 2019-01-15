@@ -570,11 +570,11 @@ article a {
         padding-top: 7em;
     }
     .cirkeldiv1 {
-        height: 340px;
+        height: 370px;
     }
     .cirkeldiv1 img {
-        width: 340px;
-        height: 300px;
+        width: 400px;
+        height: 360px;
         float: right;
     }
     .cirkeldiv1 img:hover {
@@ -618,11 +618,11 @@ article a {
 
 @media only screen and (max-width: 849px) {
     .cirkeldiv2 {
-        height: 340px;
+        height: 370px;
     }
     .cirkeldiv2 img {
-        width: 320px;
-        height: 280px;
+        width: 370px;
+        height: 350px;
     }
     .cirkeldiv2 img:hover {
         animation: CirkelLeftRight 3s cubic-bezier(1.000, -0.530, 0.405, 1.425);
