@@ -3,6 +3,17 @@
 *  STYLESHEET VOOR BLOK WEB
 *  AUTEUR: EMMA OUDMAIJER
 *  LAATSTE AANPASSING: 12 JANUARI 2019
+
+BRONNEN: 
+
+https://www.w3schools.com/howto/howto_js_sidenav.asp 
+
+https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862 
+
+https://codemyui.com 
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 */
 
 body {
@@ -95,16 +106,16 @@ header {
         border: none;
         padding: 2em 0.5em;
         margin-left: 0.5em;
-        z-index: 2;
+        
     }
     .menu__label {
         float: left;
         writing-mode: vertical-lr;
-        font-size: 1.9em;
+        font-size: 1.6em;
         letter-spacing: 0.1em;
         font-weight: bold;
         color: #ffffff;
-        z-index: 2;
+        width: 10px;
     }
     .menu__title {
         font-size: 1.9em;

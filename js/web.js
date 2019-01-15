@@ -8,22 +8,22 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-var hartjestatus = 'leeg';
-var hartjeLeeg = document.querySelector('.harticoon');
-var hartjeVol = document.querySelector('.harticoon');
+var hartjes = 'leeg';
+var hartjesNormaal = document.querySelector('.harticoon');
+var hartjesGekleurd = document.querySelector('.harticoon');
 
 function hartjesvullen() {
-    if (hartjesstatus == 'leeg') {
-        hartjesLeeg.src = '../images/hartjeingekleurd.png';
-        hartjesstatus = 'vol';
-        return hartjesstatus;
+    if (hartjes =='leeg') {
+        hartjesNormaal.src = '../images/hartjeingekleurd.png';
+        hartjes = 'vol';
+        return hartjes;
     } else {
-        hartjesLeeg.src = '../images/hartjeicoon.png';
-        hartjesstatus = 'leeg';
-        return hartjesstatus;
+        hartjesNormaal.src = '../images/hartjeicoon.png';
+        hartjes = 'leeg';
+        return hartjes;
     }
 
 }
-hartjesLeeg.addEventListener('click', hartjesvullen);
-hartjesVol.addEventListener('click', hartjesLeeg);
+hartjesNormaal.addEventListener('click', hartjesvullen);
+hartjesGekleurd.addEventListener('click', hartjesNormaal);
 
