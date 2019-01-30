@@ -206,12 +206,13 @@ h1 {
         opacity: 0;
         visibility: hidden;
         position: absolute;
+        z-index: 10;
     }
     
     .menu__list {
         padding: 0;
         margin-top: 2em;
-       
+       z-index: 1;
     }
     .menu__item {
         transition: all 0.2s;
@@ -223,10 +224,12 @@ h1 {
         border: 0px;
         text-align: left;
         font-size: 0.5em;
+        z-index: 1;
     }
     .menu__item:hover {
         color: yellow;
     }
+    
     .menu__item:before,
     .menu__item:last-child:after {
         content: '';
@@ -234,8 +237,9 @@ h1 {
         width: 6em;
         height: 0.1em;
         background: hsla(0, 0%, 100%, 0.5);
-        margin: 1em 0;
+        margin: 1em;
     }
+    
     .menu__bg-layer {
         transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
         border-radius: 50%;
@@ -245,26 +249,31 @@ h1 {
         background: #1B1D3A;
         height: 0;
         width: 0;
+        z-index: 1;
     }
+    
     .menu__btn:hover .menu__container {
         transform: translateX(0);
         transition-delay: 0;
         width: 100%;
         visibility: visible;
         opacity: 1;
-    
     }
+    
     .menu__btn:hover .menu__bg-layer {
         padding-bottom: 250%;
         width: 250%;
         opacity: 1;
     }
+    
     .menu__btn:hover .menu__bg-layer-2 {
         background: lightblue;
     }
+    
     .menu__btn:hover .menu__bg-layer-1 {
         transition-delay: 0.2s;
     }
+    
     button.verrasme{
         display: none;
     }
@@ -392,7 +401,7 @@ article {
     border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(232, 232, 232);
     border-top: 0px;
     border-radius: 14px 14px 8px 8px;
-    
+    z-index: 0;
 }
 
 article img {
