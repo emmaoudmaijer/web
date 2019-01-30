@@ -973,25 +973,41 @@ article p {
     width: 100%;
     height: 10em;
     font-size: 4em;
-    background-color: #62C5D6;
+    background-color: lightblue;
     color: white;
     font-family: sans-serif;
     letter-spacing: 0.04em;
+    text-align: center;
 }
 
 .reageren textarea {
     width:98%;
     height: 10em;
+    border: 1px solid black;
+}
+
+.reageren textarea:focus{
+  outline: none;
+  background-color: #FAEA31;
+  border:2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
 }
 
 .plaatsen {
-    font-size: 0.6em;
-    background-color: yellow;
-    color: grey;
-    border-radius: 0.3em;
-    padding-left: 3em;
-    padding-right: 3em;
-    
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-left: 5em;
+    line-height: 2.5rem;
+    background-color: rgb(255, 230, 0);
+    box-shadow: rgb(222, 194, 4) 0px 2px 0px 0px, rgba(0, 0, 0, 0.2) 0px 3px 2px 0px;
+    color: rgb(85, 86, 90);
+    cursor: pointer;
+    height: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 16em;
+    border-radius: 4px;
+    text-decoration: none;
 }
 
 
