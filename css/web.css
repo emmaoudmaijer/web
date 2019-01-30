@@ -820,13 +820,14 @@ article p {
         animation: 0.8s shake infinite alternate;
         float: right;
         margin-top: -30em;
+    
     }
 
     .cirkeldiv2 .autoregen{
         z-index: 0;
         margin-top: 10em;
-        width: 20em;
-        height: 20em;
+        width: 15em;
+        height: 15em;
         animation: 0.8s shake infinite alternate;
         float: right;
         margin-top: -30em;
@@ -863,8 +864,8 @@ article p {
 
 @media only screen and (max-width: 53em) {
     .cirkeldiv2 img {
-        width: 43em;
-        height: 40em;
+        width: 38em;
+    height: 36em;
     }
     
     div.stukjetext {
@@ -875,11 +876,12 @@ article p {
     }
     
     .cirkeldiv1 img {
-     width: 46em;
-    height: 38em;
+    width: 43em;
+    height: 36em;
     margin-top: 10px;
     float: right;
-}
+    }
+    
     .cirkeldiv1 {
     width: 100%;
     height: 40em;
