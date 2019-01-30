@@ -53,37 +53,38 @@
     </header>
 
 
-        <h1>Profielpagina</h1>
-
+      
+<h2 class="titelregistreren">Profielpagina</h2>
 <section class="registreer">
-
-        <form action="index.html">
+         
+        <form>
             <fieldset>
                 <legend>Persoonlijke informatie</legend>
-                Voornaam:<br>
-                <input type="text" name="firstname"><br> Achternaam:
-                <br>
-                <input type="text" name="lastname"><br> Wachtwoord:
-                <br>
-                <input type="password" name="password"><br> Geboortedatum: <br>
-                <input type="date" name="birth">
+                <label for="firstname">Voornaam</label>
+                <input required type="text" name="firstname">
+                <label for="lastname">Achternaam</label>
+                <input required type="text" name="lastname">
+                <label for="password">Wachtwoord<span style="float:right;" onclick="showPass()">&#128065;</span></label>
+                <input required type="password" name="password" id="password">
+                <label for="birth">Geboortedatum</label>
+                <input type="date" name="birth" placeholder="Voorbeeld: DD-MM-JJJJ (Invoer niet verplicht)">
             </fieldset>
             <br />
             <fieldset>
                 <legend>Contact gegevens</legend>
-                Adres:<br>
-                <input type="text" name="adres"><br> Postcode:
-                <br>
-                <input type="text" name="postcode"><br> Telefoonnummer:
-                <br>
-                <input type="text" name="nummer"><br> Email:
-                <br>
-                <input type="email" name="email"><br>
+                <label for="adres">Adres</label>
+                <input required type="text" name="adres">
+                <label for="postcode">Postcode</label>
+                <input required type="text" name="postcode" placeholder="Voorbeeld: 1111 AA">
+                <label for="nummer">Telefoonnummer</label>
+                <input required type="text" name="nummer">
+                <label for="email">Email</label>
+                <input required type="email" name="email" placeholder="Voorbeeld: naam@domein.nl">
             </fieldset>
             <br />
             <input type="submit" value="Aanmelden">
         </form>
 </section>
-    
+    <script src="js/web.js"></script>
     </body>
 </html>

@@ -4,205 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link rel="STYLESHEET" href="mobile/web2.css" type="text/css">
-    <link rel="stylesheet" media="screen and (min-width: 45em)" href="/css/widescreen.css">
+    <title>99 verhalen voor op reis met Eurostar</title>
+    <link rel="STYLESHEET" href="css/web.css" type="text/css">
+
 </head>
 
 <body>
     <header>
+        <button class="menu__btn">
+        <span class="menu__label">MENU</span>
 
-        <img src="images/logo.png" alt="Logo">
+        <div class="menu--hidden">
+            <div class="menu__bg-layer menu__bg-layer-2"></div>
+            <div class="menu__bg-layer menu__bg-layer-1"></div>
+            <div class="menu__container">
+                <span class="menu__title">Menu</span>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html">Alle verhalen</a></li>
+                    <li class="menu__item"><a href="Voorjou.html">Voor jou</a></li>
+                    <li class="menu__item"><a href="download.html">Downloads<span id="dllinkSmall" class="dllink"></span></a></li>
+                    <li class="menu__item"><a href="">Likes</a></li>
+                    <li class="menu__item"><a href="inloggen.html">Profiel</a></li>
+                </ul>
+            </div>
+        </div>
+    </button>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+        <nav>
+            <ul class="ul_topmenu">
 
-     
+                <li>
+                    <a href="index.html">Alle verhalen</a>
+                </li>
+                <li>
+                    <a href="Voorjou.html">Voor jou</a>
+                </li>
+                <li>
+                    <a href="download.html">Downloads<span id="dllink" class="dllink"></span></a>
+                </li>
+                <li>
+                    <a href="">Likes</a>
+                </li>
+                <li>
+                    <a href="inloggen.html">Profiel</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
     </header>
-    
-     <div class="container">
-            <button class="menu__btn">
-  <span class="menu__label">MENU</span>
-  <div class="menu--hidden">
-    <div class="menu__bg-layer menu__bg-layer-2"></div>
-    <div class="menu__bg-layer menu__bg-layer-1"></div>
-    <div class="menu__container">
-      <span class="menu__title">Menu</span>
-      <ul class="menu__list">
-        <li class="menu__item"><a href="">Alle verhalen</a></li>
-        <li class="menu__item"><a href="">Voor jou</a></li>
-        <li class="menu__item"><a href="">Downloads</a></li>
-        <li class="menu__item"><a href="">Likes</a></li>
-        <li class="menu__item"><a href="">Profiel</a></li>
-      </ul>
-    </div>
-        
-  </div>
-</button>
-    <!--
-        <ul id="slides">
-            <li class="slide showing">Slide 1</li>
-            <li class="slide">Slide 2</li>
-            <li class="slide">Slide 3</li>
-            <li class="slide">Slide 4</li>
-            <li class="slide">Slide 5</li>
-        </ul>
--->
+
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h3>Filter</h3>
-        <ul>
-            <li>
-                <form class="filter" action="web.html">
+        <h2>Filter</h2>
 
-                    <h3>Genre</h3>
+        <form class="filter" action="index.html">
+          <fieldset>
+              <legend>Genre</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="stars" value="1" checked="checked" /> Agressief</label>
+                </li>
+               <li> 
+                   <label><input type="checkbox" name="stars" value="3" checked="checked" /> Drama</label></li>
+                <li>
+                    <label><input type="checkbox" name="stars" value="5" checked="checked" /> Humor</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="stars" value="1" checked="checked" /> Liefde</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="stars" value="3" checked="checked" /> Somber</label></li>
+                <li>
+                    <label><input type="checkbox" name="stars" value="5" checked="checked" /> Spanning</label>
+                </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+            <legend>Lengte verhaal</legend>
+            <ul>
+                <li>
+                <label><input type="checkbox" name="lengte" value="1" checked="checked" /> Kort</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="lengte" value="3" checked="checked" /> Middel</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="lengte" value="5" checked="checked" /> Lang</label>
+                </li>
 
-                    <input type="checkbox" name="stars" value="1" checked="checked" /> Agressief
-                    <input type="checkbox" name="stars" value="3" checked="checked" /> Drama
-                    <input type="checkbox" name="stars" value="5" checked="checked" /> Humor
-                    <input type="checkbox" name="stars" value="1" checked="checked" /> Liefde
-                    <input type="checkbox" name="stars" value="3" checked="checked" /> Poezie
-                    <input type="checkbox" name="stars" value="5" checked="checked" /> Spanning
+            </ul>
+            </fieldset>
+             <fieldset>
+              <legend>Sorteren</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="sorteren" value="1" checked="checked" /> Van A tot Z</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="sorteren" value="3" checked="checked" /> Van Z tot A</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="sorteren" value="5" checked="checked" /> Van kort naar lang</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="sorteren" value="5" checked="checked" /> Van lang naar kort
+                </label></li>
 
-                    <h3>Lengte verhaal</h3>
+            </ul>
 
-                    <input type="checkbox" name="lengte" value="1" checked="checked" /> Kort
-                    <input type="checkbox" name="lengte" value="3" checked="checked" /> Middel
-                    <input type="checkbox" name="lengte" value="5" checked="checked" /> Lang
+            
+         </fieldset>
+         <input type="submit" name="subscribe" value="Toepassen"/>
+         
+        </form>
 
-
-                    <h2>Reageren op dit verhaal</h2>
-                    <p><textarea name="comments" cols="20" rows="4" placeholder="Enter your comments here..."></textarea>
-                    </p>
-
-                    <input type="submit" name="subscribe" value="Toepassen" />
-                    <script src="js/web.js"></script>
-                </form>
-            </li>
-        </ul>
     </div>
 
+    <img src="images/filtericoon.png" alt="filter" class="filtericon" onclick="openNav()">
 
-
-
-
-    <!-- Use any element to open the sidenav -->
-    <span onclick="openNav()">open</span>
-
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-    <div id="main">
-        ...
-    </div>
-
-
-    <h1><button>Verras me!</button>Alle verhalen <br><img src="images/alleverhalen.png" alt="decoratie"><br></h1>
-    <h2>Meest bekeken</h2>
-    <section>
-
+    <h2 class="subtitel">Aggressieve verhalen</h2><button class="verrasme">Verras me!</button><img class="subtitelStreep" src="images/alleverhalen.png">
+    
+<section>
         <article>
-            <img src="images/sportcommentaar.png" alt="verhaal">
-            <h2>Sportcommentaar</h2>
-            <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein..</p>
-            <a href="">Lees verder</a><br/><br/>
-
-        </article>
-        <article>
-            <img src="images/verliefd.png" alt="verhaal">
-            <h2>Verliefd</h2>
-            <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag...</p>
-            <a href="">Lees verder</a>
-        </article>
-        <article>
-            <img src="images/voetbalanalisten.png" alt="verhaal">
-            <h2>Voetbalanalisten(1)</h2>
-            <p>Jack van Gelder: Jongens, we hebben net gekeken naar Max Molovich die...</p>
-            <p><a href="">Lees verder</a></p>
-
-        </article>
-
-        <article>
-
-
-            <img src="images/voetbalanalisten.png" alt="verhaal">
-            <h2>Voetbalanalisten(2)</h2>
-            <p>Wilfred Genee: René, we beginnen zoals altijd met jou. Is je nog wat opgevallen....</p>
-            <a href="">Lees verder</a>
-
-        </article>
-    </section>
-    <h2>Agressieve verhalen</h2>
-    <section>
-
-        <article>
-
-
-            <img src="images/sportcommentaar.png" alt="verhaal">
-            <h2>Sportcommentaar</h2>
-            <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein...</p>
-            <a href="">Lees verder</a>
+           <img src="images/bejaard.png" alt="verhaal">
+            <h3>Bejaard</h3>
+            <p>De chauffeur kijkt verveeld maar vooral ook licht geirriteerd</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon"  onclick="hartjesvullen(this)">
         </article>
         <article>
 
 
             <img src="images/klumperbeven.png" alt="verhaal">
-            <h2>Klumperbeven</h2>
-            <p> Ik bus de stap uit en been met gepaste zwind over het stationsplein.</p>
-            <a href="">Lees verder</a>
+            <h3>Klumperbeven</h3>
+            <p> Ik bus de stap uit en been met gepaste zwind over het..</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon"  onclick="hartjesvullen(this)">
         </article>
-        <article>
-
-
-            <img src="images/bejaard.png" alt="verhaal">
-            <h2>Bejaard</h2>
-            <p>De chauffeur kijkt verveeld maar vooral ook licht geirriteerd</p>
-            <a href="">Lees verder</a>
-        </article>
+    
         <article>
 
             <img src="images/dialoog.png" alt="verhaal">
-            <h2>Dialoog</h2>
+            <h3>Dialoog</h3>
             <p>- Wat zoek je? – Hoe bedoel je: wat zoek je? – Nou gewoon,</p>
-            <a href="">Lees verder</a>
-
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon"  onclick="hartjesvullen(this)">
+        </article>
+        <article>
+            <img src="images/sportcommentaar.png" alt="verhaal">
+            <h3>Sportcommentaar</h3>
+            <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek...</p>
+            <a href="">Lees verder</a><br><br>
+            <div class="dl-voor" onclick="wisselClass(this)"></div>
+            <img class="harticoon" src="images/hartjeicoon.png" alt="like icoon"  onclick="hartjesvullen(this)">
         </article>
     </section>
 
-    <h3>Filter</h3>
-    <ul>
-        <li>
-            <form action="web.html">
 
-                <h3>Genre</h3>
-
-                <input type="checkbox" name="stars" value="1" checked="checked" /> Agressief
-                <input type="checkbox" name="stars" value="3" checked="checked" /> Drama
-                <input type="checkbox" name="stars" value="5" checked="checked" /> Humor
-                <input type="checkbox" name="stars" value="1" checked="checked" /> Liefde
-                <input type="checkbox" name="stars" value="3" checked="checked" /> Poezie
-                <input type="checkbox" name="stars" value="5" checked="checked" /> Spanning
-
-                <h3>Lengte verhaal</h3>
-
-                <input type="checkbox" name="lengte" value="1" checked="checked" /> Kort
-                <input type="checkbox" name="lengte" value="3" checked="checked" /> Middel
-                <input type="checkbox" name="lengte" value="5" checked="checked" /> Lang
-
-
-                <h3>Reageren op dit verhaal</h3>
-                <p><textarea name="comments" cols="20" rows="4" placeholder="Enter your comments here..."></textarea>
-                </p>
-
-                <input type="submit" name="subscribe" value="Toepassen" />
-
-            </form>
-        </li>
-    </ul>
-    <script src="mobile/web2.js"></script>
-    <footer></footer>
-
-
-    <ul class="list-inline action-menu">
-        <li><a href="" class="like"><span class="fa fa-thumbs-up"></span> <span class="menulabel">Like</span> <span class="counter">0</span></a></li>
-        <li><a href=""><span class="fa fa-bookmark"></span> <span class="menulabel">Save</span></a></li>
-    </ul>
+    <script src="js/web.js"></script>
 </body>
 
 </html>

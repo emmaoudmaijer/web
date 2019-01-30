@@ -6,14 +6,37 @@
 /*----- functie om de download animatie af te spelen-----*/
 
 function wisselClass(img) {
-            img.classList.toggle('dl-na');
+    img.classList.toggle('dl-na');
+    document.getElementById("dllink").innerHTML = "&#10122;";
+    document.getElementById("dllinkSmall").innerHTML = "&#10122;";
 }
+
+
 
 
 /*----- functie om het filtermenu te tonen -----*/
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "35em";
+}
+
+
+/*----- functie om de homepage foto te verbergen -----*/
+
+function closeHomePageImg(){        
+    document.querySelector('.titelhomepagina').style.display='none';
+}
+
+
+/*----- functie om het wachtwoord te tonen op de inlog pagina -----*/
+
+function showPass() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+                x.type = "text";
+        } else {
+                x.type = "password";
+        }
 }
 
 
@@ -27,18 +50,57 @@ function closeNav() {
 /*----- functie om het favorietenhartje te vullen -----*/
 
 var hartjes = 'leeg';
-//var hartjesImage = document.querySelector('.harticoon');
+var hartjesImage = document.querySelector('.harticoon');
+hartjesImage.addEventListener('click', hartjesvullen);
 
-function hartjesvullen(hartjesImage) {
+
+function hartjesvullen() {
     if (hartjes =='leeg') {
-        hartjesImage.src = '/web/images/hartjeingekleurd.png';
+        hartjesImage.src = '../web/images/hartjeingekleurd.png';
         hartjes = 'vol';
+        document.getElementById("likecount").innerHTML = "&#10122;";
+        document.getElementById("likecountSmall").innerHTML = "&#10122;";
         return hartjes;
     } else {
-        hartjesImage.src = '/web/images/hartjeicoon.png';
+        hartjesImage.src = '../web/images/hartjeicoon.png';
         hartjes = 'leeg';
+        document.getElementById("likecount").innerHTML = "";
+        document.getElementById("likecountSmall").innerHTML = "";
         return hartjes;
     }
 }
-//hartjesImage.addEventListener('click', hartjesvullen);
 
+
+function hartjesvullenOUD(hartjesImage) {
+    if (hartjes =='leeg') {
+        hartjesImage.src = '../web/images/hartjeingekleurd.png';
+        hartjes = 'vol';
+        document.getElementById("likecount").innerHTML = "&#10122;";
+        document.getElementById("likecountSmall").innerHTML = "&#10122;";
+        
+        return hartjes;
+    } else {
+        hartjesImage.src = '../web/images/hartjeicoon.png';
+        hartjes = 'leeg';
+        document.getElementById("likecount").innerHTML = "";
+        document.getElementById("likecountSmall").innerHTML = "";
+        return hartjes;
+    }
+}
+
+/*
+hartjes.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesImage);
+hartjesImage.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesvullen);
+hartjesImage.addEventListener('click', hartjesvullen);
+*/
+
+document.getElementsById("verwijderen").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}

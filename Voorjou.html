@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>99 verhalen voor op reis met Eurostar</title>
     <link rel="STYLESHEET" href="css/web.css" type="text/css">
 
 </head>
@@ -21,15 +21,15 @@
                 <span class="menu__title">Menu</span>
                 <ul class="menu__list">
                     <li class="menu__item"><a href="index.html">Alle verhalen</a></li>
-                    <li class="menu__item"><a href="">Voor jou</a></li>
-                    <li class="menu__item"><a href="">Downloads</a></li>
+                    <li class="menu__item"><a href="Voorjou.html">Voor jou</a></li>
+                    <li class="menu__item"><a href="download.html">Downloads<span id="dllinkSmall" class="dllink"></span></a></li>
                     <li class="menu__item"><a href="">Likes</a></li>
                     <li class="menu__item"><a href="inloggen.html">Profiel</a></li>
                 </ul>
             </div>
         </div>
     </button>
-        <img src="images/logo.png" alt="Logo">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
         <nav>
             <ul class="ul_topmenu">
 
@@ -37,10 +37,10 @@
                     <a href="index.html">Alle verhalen</a>
                 </li>
                 <li>
-                    <a href="">Voor jou</a>
+                    <a href="Voorjou.html">Voor jou</a>
                 </li>
                 <li>
-                    <a href="">Downloads</a>
+                    <a href="download.html">Downloads<span id="dllink" class="dllink"></span></a>
                 </li>
                 <li>
                     <a href="">Likes</a>
@@ -52,25 +52,14 @@
         </nav>
 
     </header>
-
-
-
-            <form class="aanmelden" action="index.html">
-               <h2 class="subtitel">Aanmelden op uw profiel</h2>
-
-                <fieldset>
-                <label for="email">Email adres</label>
-                <input required type="email" name="email">
-                <label for="password">Wachtwoord<span style="float:right;" onclick="showPass()">&#128065;</span></label>
-                <input required type="password" name="password" id="password">
-                </fieldset>
-                <div><input type="submit" name="subscribe" value="Inloggen" /></div>
-                <div>
-                <a href="">Wachtwoord vergeten</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="formulier.html">Nog geen account? registreer hier.</a>
-                </div>
-            </form>
-
-            
-            <script src="js/web.js"></script>
-</body>
+    <h2 class="overig">Voor jou</h2>
+    <img class="subtitelStreep" src="images/alleverhalen.png" alt="decoratie">
+    
+ <section>
+    <p class="voorjou">Je hebt nog geen opgeslagen verhalen.</p>
+     <p class="voorjou">Doe een test om er achter te komen welke verhalen er bij je passen!</p>
+     <p class="voorjoulink">
+     <a href="index.html">Test</a></p>
+     </section>  
+    </body>
 </html>
