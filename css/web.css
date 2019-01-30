@@ -306,7 +306,7 @@ h3 {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 550;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
     text-align: center;
     
     
@@ -420,16 +420,17 @@ article a {
     left: 14px;
     border-radius: 4px;
     text-decoration: none;
+
      }
     
 article p {
     text-align: center;
-    padding: 0 0.6em 0.5em 0.6em;
     font-size: 1.7em;
     color: darkgrey;
     letter-spacing: 0.01em;
     font-weight: 400;
     line-height: 1.9rem;
+    padding: 1em;
     }
 
 
@@ -444,6 +445,7 @@ article p {
     padding-left: 5em;
     display: inline;
     padding-bottom: 2em;
+    padding-top: 8em;
 }
 
 
@@ -458,6 +460,7 @@ article p {
     background-image: url("../images/download-icoon.png");
     background-position: 0em;
     cursor: pointer;
+    margin-top: 5.8em;
 
 }
 
@@ -466,6 +469,7 @@ article p {
     animation: playdl 2.8s steps(10);
     background-image: url("../images/download-icoon.png");
     background-position: -450px;
+
 }
 
 .dllink{
@@ -613,7 +617,11 @@ article p {
   background-color: #FAEA31;
   border:2px solid black;
 }
- 
+
+.aanmelden input[type="submit"]:hover{
+    background-color: #c1f0f0;
+}
+
 .aanmelden input[type="submit"] {
     margin: 0;
     font-size: 1em;
@@ -714,6 +722,10 @@ article p {
     padding: 0.5em;
     font-size: 1.2em;
     width:10em;
+}
+
+.registreer input[type="submit"]:hover{
+    background-color: #c1f0f0;
 }
  
 .registreer legend{
@@ -844,28 +856,10 @@ article p {
         justify-content: center;
         padding-top: 7em;
     }
-    .cirkeldiv1 {
-        height: 20em;
-    }
-    
-    .cirkeldiv1 img {
-        width: 20em;
-        height: 20em;
-        z-index: 20;
-       
-    }
-    .cirkeldiv2 {
-        height: 20em;
 
-    }
-}
-
-/*------------- Mobiel screen cirkels waar het verhaal in staat. ---------------*/
-
-@media only screen and (max-width: 53em) {
     .cirkeldiv2 img {
         width: 38em;
-    height: 36em;
+        height: 36em;
     }
     
     div.stukjetext {
@@ -876,23 +870,23 @@ article p {
     }
     
     .cirkeldiv1 img {
-    width: 40em;
-    height: 36em;
-    margin-top: 10px;
-    float: right;
+        width: 40em;
+        height: 36em;
+        margin-top: 10px;
+        float: right;
     }
     
     .cirkeldiv1 {
-    width: 100%;
-    height: 40em;
+        width: 100%;
+        height: 40em;
     }
     .cirkeldiv2 {
-    width: 100%;
-    height: 40em;
+        width: 100%;
+        height: 40em;
     
     }      
     p.stukjetext1 {
-    font-size: 3.9vw;
+        font-size: 3.9vw;
     }
 }
 
@@ -958,48 +952,11 @@ article p {
     background-size: 100% 100%;
 }
 
-
-@keyframes CirkelLeftRight {
-    from {
-        transform: rotate(0deg) translate(0) rotate(0deg);
-    }
-    to {
-        transform: rotate(0deg) translate(60vw) rotate(0deg);
-    }
-}
-
 .cirkeldiv2 {
     background-image: url(../images/verhaalbackground1.jpg);
     background-repeat: round;
     background-size: 100% 100%;
 }
-
-
-
-
-
-
-
-
-/*----------- stijl voor animatie op de verhaalpagina: cirkel van rechts naar links -----------*/
-
-
-
-.cirkeldiv1 img:hover {
-    animation: CirkelRightLeft 3s cubic-bezier(1.000, -0.530, 0.405, 1.425);
-    transform: rotate(0deg) translate(-60vw) rotate(0deg);
-    cursor: pointer;
-}
-
-@keyframes CirkelRightLeft {
-    from {
-        transform: rotate(0deg) translate(0) rotate(0deg);
-    }
-    to {
-        transform: rotate(0deg) translate(-60vw) rotate(0deg);
-    }
-}
-
 
 
 
